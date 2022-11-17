@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d87093;
+}
+
+@media (max-width: 1400px) {
+    body {
+    background-color: #d87093;
+    }
+::after {
+        content: "1400px - ээс их болон тэнцүү үед = xxl (extra extra large) => 1400px";
+        color: black;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    ::after {
+        content: "1200px - ээс их болон тэнцүү үед = xl (extra large) => 1200px";
+        color: black;}
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: pink;
+    }
+    ::after {
+        content: "992px - ээс их болон тэнцүү үед = lg (large) => 992px";
+        color: black;}
+}
+
+@media (max-width: 992px) {
+    body { 
+        background-color: aqua;
+    }
+    ::after {
+        content: "768px - ээс их болон тэнцүү үед = md (medium) => 768px";
+        color: black;}
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: bisque;
+    }
+    ::after {
+        content: "576px - ээс их болон тэнцүү үед = sm  (small) => 576px";
+        color: black;}
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: green;
+    }
+::after {
+    content: "576px - ээс их болон тэнцүү үед = sm  (small) => 576px";
+    color: black;
+}
+}
