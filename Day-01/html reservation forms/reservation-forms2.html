@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation forms 2</title>
+    <link href="reservation-forms2.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h3>Welcome to the 24x7 Fitness Club : Courts Reservation Page!!</h3>
+    </header>
+    <main>
+      <section>
+        <form>
+          <div>
+            <fieldset>
+              <legend>Member Demographic</legend>
+              <div>
+                <label>Name</label>
+                <input type="text" value="" />
+              </div>
+              <div>
+                <p>Are you a Member?</p>
+                <input type="radio" name="member" />
+                <label>Member</label>
+                <input type="radio" name="non-member" />
+                <label>Non-member</label>
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="email" value="email" />
+              </div>
+            </fieldset>
+            <div>
+              <div>
+                <label>Facility</label>
+                <select>
+                  <option value="0">Badminton</option>
+                  <option value="1">Runner</option>
+                  <option value="2">Cross-fit</option>
+                </select>
+              </div>
+              <div>
+                <label>Select a reservation date and time:</label><br />
+                <input type="date" value="" />
+                <input type="time" value="" />
+              </div>
+              <div>
+                <input type="checkbox" value="" />
+                <label>I agree to the club's reservation policy</label>
+              </div>
+              <div>
+                <button type="button">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
