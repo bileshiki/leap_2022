@@ -1,19 +1,12 @@
 * {
     box-sizing: border-box;
 }
-/* body{
-    width: 100%;
-    color: rgba(137, 176, 223);
-} */
-section {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background-color: rgba(137, 176, 223);
-}
 
+form {
+    display: flex;
+    margin: 0 auto;
+    
+}
 .container {
     display: flex;
     margin: 0 auto;
@@ -21,7 +14,10 @@ section {
 }
 
 .white-container {
-    background-color: white;
+    background-color:  rgb(224, 224, 224);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .white-container h1 {
@@ -30,6 +26,9 @@ section {
 
 .white-container input {
 background-color: #fff;
+height: 50px;
+width: 200px;
+text-align: center;
 }
 
 .white-container ::placeholder {
@@ -38,12 +37,23 @@ background-color: #fff;
 
 .blue-container {
    background-color: rgb(58, 58, 193);
-   border-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   padding: 10px;
 } 
+
+.blue-container h1 {
+    color: #fff;
+}
 
 .blue-container input {
     background-color: rgb(58, 58, 193);
 }
+
+.blue-container label {
+    color: #fff;
+}
+
 
 
 .blue-container ::placeholder {
@@ -51,5 +61,9 @@ background-color: #fff;
 }
 
 
+button { 
+    display: flex;
+    margin: 0 auto;
+}
 /* background-color:    - 
-- rgb(224, 224, 224) */
+- */
