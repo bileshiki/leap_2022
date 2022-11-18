@@ -2,9 +2,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgba(137, 176, 223);
+   
+}
+
 form {
     display: flex;
     margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 500px;
+    
     
 }
 .container {
@@ -14,10 +23,11 @@ form {
 }
 
 .white-container {
-    background-color:  rgb(224, 224, 224);
-    padding: 10px;
+    background-color:  #fff;
+    padding: 30px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    font-size: 18px;
 }
 
 .white-container h1 {
@@ -27,19 +37,29 @@ form {
 .white-container input {
 background-color: #fff;
 height: 50px;
-width: 200px;
-text-align: center;
+width: 100%;
+text-align: start;
+border: 0px;
+border-bottom: 1px solid rgb(224, 224, 224);
+font-size: 18px;
 }
 
 .white-container ::placeholder {
     color: rgb(128, 127, 131);
 }
 
+.name2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .blue-container {
    background-color: rgb(58, 58, 193);
    border-top-right-radius: 10px;
    border-bottom-right-radius: 10px;
-   padding: 10px;
+   padding: 30px;
+   font-size: 18px;
 } 
 
 .blue-container h1 {
@@ -48,16 +68,33 @@ text-align: center;
 
 .blue-container input {
     background-color: rgb(58, 58, 193);
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+}
+.checkbox {
+    height: 12px !important; 
 }
 
 .blue-container label {
     color: #fff;
 }
 
-
+.blue-container a {
+    color: #fff;
+}
 
 .blue-container ::placeholder {
     color: #fff;
+}
+
+.blue-container select {
+    background-color: rgb(58, 58, 193);
+    border: 0px;
+    color: #fff;
+    font-size: 18px;
 }
 
 
@@ -65,5 +102,4 @@ button {
     display: flex;
     margin: 0 auto;
 }
-/* background-color:    - 
-- */
+
