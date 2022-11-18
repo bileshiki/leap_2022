@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+div {
+    padding: 5px;
+}
