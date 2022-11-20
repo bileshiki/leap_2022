@@ -1,0 +1,23 @@
+.blue {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 5s;
+    transition-delay: 1s;
+}
+
+.blue:hover {
+    width: 100%;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 3s;
+    transition-delay: 0s;
+}
+
+.green:hover {
+    width: 100%;
+}
