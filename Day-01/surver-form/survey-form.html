@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link href="survey-form.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Social media хэрэглэгчдийн судалгаа</h1>
+        <p>Судалгаанд оролцсон танд баярлалаа.</p>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <form>
+                    <fieldset>
+                        <legend>Ерөнхий мэдээлэл</legend>
+                        <div>
+                            <label>Нэр</label>
+                            <input type="text" name="name" value="">
+                        </div>
+                        <div>
+                            <label>И-мэйл</label>
+                            <input type="email" name="email" value="">
+                        </div>
+                        <div>
+                            <label>Нас</label>
+                            <input type="text" name="age" value="">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container">
+                <form>
+                    <fieldset>
+                        <legend>Social media</legend>
+                        <div>
+                            <label>Та өдөрт хэдэн цаг social media ашигладаг вэ?</label>
+                        </div>
+                        <div>
+                            <p>Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн алийг нь илүүд үздэг вэ?</p>
+                            <input type="radio" name="online" value="">
+                            <label>Онлайн худалдан авалт</label>
+                            <input type="radio" name="shop" value="">
+                            <label>Дэлгүүр орж худалдан авалт</label>
+                        </div>
+                        <div>
+                            <p>Та ямар social media platform ашигладаг вэ?</p>
+                            <input type="checkbox" value="">
+                            <label>Facebook</label>
+                            <input type="checkbox" value="">
+                            <label>Instagram</label>
+                            <input type="checkbox" value="">
+                            <label>Twitter</label>
+                            <input type="checkbox" value="">
+                            <label>Reddit</label>
+                            <input type="checkbox" value="">
+                            <label>Snapchat</label>
+                            <input type="checkbox" value="">
+                            <label>Quora</label>
+                            <input type="checkbox" value="">
+                            <label>Бусад</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <p>Санал хүсэлт</p>
+                <textarea rows="10" cols="50">Санал хүсэлтээ энд бичнэ үү</textarea>
+            </div>
+            <div>
+                <input type="submit" value="Илгээх"></input>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
