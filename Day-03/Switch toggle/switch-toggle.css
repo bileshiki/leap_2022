@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    max-width: 100px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    background-color: gray;
+    transition: width 2s;
+}
+
+.container:hover {
+    background-color: blue;
+    width: 100px;
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+    transition: width 2s;
+}
+
+input:hover {
+    width: 130px;
+}
+
