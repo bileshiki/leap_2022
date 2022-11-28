@@ -1,22 +1,20 @@
 
- let firstName = "Bilguun";
- console.log(typeof(firstName));
- console.log(firstName);
+ let firstName1 = "Bilguun";
 
- let age = 27;
- console.log(typeof(age));
- console.log(age);
+ console.log(firstName1);
+
+ let age1 = 27;
+
+ console.log(age1);
  
  let fname = true;
-console.log(typeof(fname));
+
 console.log(fname);
 
 let a = null
-console.log(typeof(a));
+
 console.log(a);
 
-let b = undefined;
-console.log(typeof(b));
+let b 
+console.log(b);
 
-let w 
-console.log(w);
