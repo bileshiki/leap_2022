@@ -31,6 +31,15 @@
         let yourAge = 12;
         console.log(MyAge, yourAge);
 
-//Гурвалжингийн периметрийг олох 
-        let x = 3;
-        let y = 4;
+//Гурвалжингийн периметрийг олох 11
+        let side1 = 3; 
+        let side2 = 3;
+        let side3 = 3;
+        let total = 3 + 3 + 3;
+        console.log(total);
+
+//Тойргийн талбайг олох 12
+        let lenth = 4;
+        let width = 8;
+        let side = 4 * 8;
+        console.log(side); 
