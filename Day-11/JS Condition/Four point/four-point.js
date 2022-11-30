@@ -6,5 +6,5 @@ let d = 120;
 let i = a <=b && c <= d;
 
 if (a <= b && c <= d) {
-    console.log("haritsuulaad garsan hamgiin baga too", i);
+    console.log("haritsuulaad garsan hamgiin baga too",);
 }

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.outside {
+    height: 50px;
+    width: 200px;
+    transition: 1s;
+}
+
+.outside:hover {
+    
+}
+
+.inside {
+    height: 50px;
+    width: 200px;
+}
