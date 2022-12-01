@@ -29,7 +29,7 @@ console.log(full);
 //5
 let firstName2 = "Bilguun";
 let lastName2 = "Erdenekhuu";
-let age = "27"
+let age = "27";
 let country = "Mongol";
 let city = "Ulaanbaatar";
 let job = "suraltsdag";
