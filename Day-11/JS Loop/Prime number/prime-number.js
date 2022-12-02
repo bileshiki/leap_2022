@@ -7,14 +7,27 @@
 
 console.log("Exercise find prime number");
 
-let a = prompt("Ta duriin toogoo oruulna uu");
-let primeNumber = Number(a);
-let result = "";
+let num = prompt("Ta duriin toogoo oruulna uu")
+    isPrime = true;
 
-while (primeNumber > 0) {
-    if (primeNumber % a == 1) {
-        result += primeNumber + " ";
-    }
-    primeNumber ++;
+    if(num <= 1) {
+        console.log("1 is neither prime nor composite number.");
+
+    } else if (num > 1) {
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            console.log(`${num} is a prime number`);
+        } else {
+            console.log(`${num} is a not prime number`);
+        }
 }
-console.log(result);
+
+else {
+    console.log("The number is not a prime number.");
+}
+    
