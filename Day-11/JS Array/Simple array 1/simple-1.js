@@ -12,7 +12,7 @@ for (let i = 0; i < itCompanies.length; i++) {
 }
 
 // Эхний компани, дунд болон сүүлчийн компанийг хэвлэх
-for(let i = 0; i < itCompanies.length; i++)
+for(let i = 0; i < itCompanies.length; i++);
 // Компани бүрийг хэвлэх
 // Компанийн нэр тус бүрийг нэг нэгээр нь том үсгээр сольж хэвлэж гарга
 // Array - г өгүүлбэр болгон хэвлэ: Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon зэрэг мэдээллийн технологийн томоохон компаниуд.
