@@ -129,10 +129,21 @@ function ageUpp() {
         if (students[i].birthYear <= 2022) {
          let age = 2022 - students[i].birthYear;
          console.log(students[i].name + " " + age + "настай");
-        }
+        };
      };
-}
+};
 ageUpp();
 
+
+// 4. Сурагчидын ганц бие хүмүүсийг буцаах function бичэх.
+console.log("\n" + "Ганц бие хүмүүс" + "\n" + "\n");
+function relationship() {
+    for (let i = 0; i <= students.length -1; i++) {
+        if (students[i].single == true) { 
+            console.log(students[i].name);
+        };
+    };
+};
+relationship();
 }
 myFunction();
