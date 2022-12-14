@@ -41,11 +41,11 @@
 function createString() {
   let cards = "";
   for (let i = 0; i < 2; i++) {
-    let card = `<div class="card" style="width:18rem; border: 1px solid black; margin: 10px; border-radius: 10px; text-align: center">
+    let card = `<div class="card" style="width:18rem; border: 1px solid black; margin: 10px; border-radius: 10px; text-align: center; background-color: orange">
     <img class="card-img-top" style="width : 100%; border-radius: 10px"  src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/14/yvA5SpUH-IMG-Worlds-1200x800.jpg" />
     <div class="card-body">
     <h5 class="card-title">${i}</h5>
-    <p class="card-text" style="background-color: orange; color: white">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+    <p class="card-text" style="background-color: grey; color: white">Some quick example text to build on the card title and make up the bulk of the card's content</p>
     </div>
     </div>`;
 
