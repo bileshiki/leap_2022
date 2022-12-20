@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Board</title>
+    <link href="./point-board.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Point Board</h1>
+        <section class="listHead">
+            <form action="">
+                <input type="text" class="lastName" name="lastName" placeholder="Овог">
+                <input type="text" class="firstName" name="firstName" placeholder="Нэр">
+                <select name="gender" class="genders">
+                    <option value="0">Хүйс</option>
+                    <option value="1">Эрэгтэй</option>
+                    <option value="2">Эмэгтэй</option>
+                </select>
+                <input type="number" name="point" class="point" placeholder="Оноо">
+                <button class="btn">Илгээх</button>
+            </form>
+        </section>
+    
+        <section class="listBody">
+            <h1>List</h1>
+            <div class="lists">
+                <span class="fivePoint">+5</span>
+                <span class="del">Устгах</span>
+            </div>
+        </section>
+    </div>
+    
+    <script src="./point-board.js"></script>
+</body>
+</html>
