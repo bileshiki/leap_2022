@@ -1,0 +1,173 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.headList {
+  display: flex;
+  gap: 30px;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1 span {
+  font-size: 52px;
+  color: #424242;
+}
+
+.section-1 p {
+  font-size: 18px;
+  color: #424242;
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  
+}
+
+.links p {
+  color: white;
+  gap: 30px;
+}
+
+.blogPost {
+  text-align: start;
+  width: 700px;
+}
+
+.blogPost h1 {
+  font-size: 52px;
+  
+}
+
+.twitter  {
+  background-color: #47ACDF;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  width: 201px;
+  height: 60px;
+}
+
+.linkedin {
+  background-color: #1275B1;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  width: 201px;
+  height: 60px;
+}
+
+.medium {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  width: 201px;
+  height: 60px;
+}
+
+.mainList {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  gap: 54px;
+}
+
+.mainList p:hover{
+  border-bottom: solid 2px #D05270;
+  color: #D05270;
+}
+
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.section-2 h1 {
+  font-size: 24px;
+}
+
+.section-2 p {
+  font-size: 16px;
+}
+
+.section-2-1 {
+  width: 50%;
+}
+
+.section-2-2 {
+  width: 50%;
+}
+
+.readMore {
+  color: #D05270;
+  font-size: 18px;
+}
+
+.footer{
+  padding-top: 200px;
+  padding-bottom: 100px
+}
