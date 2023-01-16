@@ -1,14 +1,51 @@
+import React, { useState, useTransition } from "react";
 import "./App.css";
-import React, { useState } from "react";
+import Modal from "./components/Modal";
+import TodoList from "./components/TodoList";
 
 //id, title, isDone
 function App() {
+  const init = {
+    id: "",
+    task: "",
+    type: 0,
+    isImportant: false,
+    isDone: false,
+  }
+
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
+  const [ID, setId] =useState("0");
+  const [modal, setModal] = useState(false);
+
+  const [taskObj, setTaskObj] = useState(init)
 
   const [doneTotal, setDoneTotal] = useState(0);
-  // const [isDone, setIsDone] = useState(false);
-  const [input, setInput] = useState("");
+
+const addTask = (e) => {
+  const newObj = {
+    id: createdId (), title: task, isDone: false,
+  };
+  const newArr = [...tasks];
+
+  if (ID !== "0") {
+    newArr.map((e) => {
+      if (e.id === ID) {
+        e.title=task;
+      }
+      return e;
+    });
+  } else {
+    newArr.push(newObj);
+  }
+  
+}
+      setTasks(newArr);
+
+      setTask("");
+      setId("0");
+      setModal(false);
+ 
 
   // Delete Button
   const deleteItem = (id) => {
@@ -18,31 +55,7 @@ function App() {
     setTasks(delTask);
   };
 
-  // task add hiih
-  const addTask = () => {
-    if (input.length === 0) {
-      const newObj = {
-        id: tasks.length,
-        title: task,
-        isDone: false,
-      };
 
-      const newArr = [...tasks];
-      newArr.push(newObj);
-
-      setTasks(newArr);
-      setTask("");
-    } else {
-      tasks.map((a) => {
-        if (a.id === input) {
-          a.title = task;
-        }
-        setTasks(tasks);
-        setTask("");
-        setInput("");
-      });
-    }
-  };
 
   //edit button
   function editTask(id) {
@@ -126,10 +139,13 @@ function App() {
               </div>
             </div>
           ))}
+          {modal && (
+              <Modal modal={modal} setModal ={handleModal} task= {task} id={ID} setTask={setTask} addTask={addTask}/>
+            )}
         </div>
       </div>
     </div>
   );
-}
+          }
 
 export default App;
