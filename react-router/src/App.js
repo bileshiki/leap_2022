@@ -1,12 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Person from "./pages/Person";
-import Phone from "./pages/Phone";
-import Enterprise from "./pages/Enterprise";
+import {Home, About, Contact, Enterprise, Person, Phone} from "./pages"
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import React from "react";
+import React, {useState} from "react";
+
+import { Header, Main, Modal, News, Footer } from "./components"
 
 function App() {
 

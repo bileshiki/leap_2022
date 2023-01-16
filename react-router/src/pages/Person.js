@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Person() {
+export const Person = () => {
   return (
     <div>Person</div>
   );

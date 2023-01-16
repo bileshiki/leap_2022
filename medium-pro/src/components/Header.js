@@ -1,22 +1,46 @@
-export default function Header ({headList}) {
-    
-    console.log(headList);
+import React, {useState} from "react";
+
+export const Header = ({ style, onLogin, user, setUser, showModal, openModal }) => {
+    const cates = [
+        {id: 1, title: "Our strory"},
+        {id: 2, title: "Membership"},
+        {id: 3, title: "Write"},
+        {id: 4, title: "Sign in"},
+      ];
 
         return (
-            <div className="head row d-flex ">
-                <div className="headLogo col-4">
-                    <b class="bi bi-medium"> MEDIUM</b>
+            <div style={style} className="header">
+                <div className="container d-flex justify-content-between align-items-center">
+                    <img width={150} height={30} className="img" src={"https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png"} alt="logo"/>
+                    <nav>
+                        <ul className="d-flex align-items-center">
+                            {cates.map((a, index ) => (
+                            <>
+                            <li className="list-item" key={index}>
+                            {a.id == 4 ? (
+                                user ? (user) : (
+                                    <span className="btn btn-primary" onclick={openModal}>
+                                        {a.title}
+                                    </span>
+                                ) 
+                            ): (
+                            <a className="title" href={a.link}>
+                                {a.title}
+                                </a>
+                            )} 
+                            </li>
+                            </>
+                            ))}
+                           {user && (
+                            <button className="btn btn-warning" onClick={() => setUser ("")}>
+                            Log Out
+                            </button>
+                           )}
+                            
+                            
+                        </ul>
+                    </nav>
                 </div>
-            <div className="headList d-flex col-8 justify-content-between">
-                    {headList.map((obj) => {
-                        return(
-                            <div key={obj.id}>
-                                <p>{obj.title}</p>
-                            </div>
-                        )
-                    })}
-                    <button href="#" className="bg-dark rounded">Get started</button>
             </div>
-            </div>
-        )
+        );
     }

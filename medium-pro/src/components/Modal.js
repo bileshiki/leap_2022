@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Modal ({
+export const Modal = ({
     setModal,
     modal,
     id,
     addTask,
     taskObj,
     setTaskObj,
-}) {
+}) => {
     const dn = modal ? "block" : "none";
 
     return (
@@ -18,5 +18,5 @@ export default function Modal ({
                 </div>
             </div>
         </div>
-    )
+    );
 }

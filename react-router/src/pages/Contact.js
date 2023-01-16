@@ -1,7 +1,7 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
 
-export default function Contact () {
+export const Contact = () => {
     
     return (
         <div className="row">

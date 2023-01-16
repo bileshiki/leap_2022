@@ -1,4 +1,4 @@
-export default function Main({data}) {
+export const Main = ({data}) => {
 
   return (
     <div className="main d-flex">
